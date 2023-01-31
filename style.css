@@ -1,0 +1,71 @@
+/* stylesheet for landing page project 1/18/23
+font-family: 'Josefin Sans', sans-serif; */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+section#intro {
+	background-image: url("back.jpg");
+	height: 100%;
+	background-size: cover;
+	display: table;
+	width: 100%;
+}
+
+div#content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+div#content h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 5em;
+	color: white;
+	text-shadow: 4px 0px 8px black;
+	letter-spacing: 5px;
+}
+
+a#btn {
+	text-decoration: none;
+	background-color: goldenrod;
+	color: black;
+	font-size: 2.5em;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 10px 20px;
+	border-radius: 10px;
+	transition: background-color 1s;
+}
+
+a#btn:hover {
+	background-color: gold;
+	border-color: goldenrod;
+	border-style: solid;
+	border-width: 3px;
+}
+
+p {
+	font-size: 1.2em;
+	padding: 0px 10px;
+}
+
+/* Media Query Styling for small devices */
+@media screen and (max-width: 768px) {
+
+	div#content h1 {
+		font-size: 3em;
+		letter-spacing: 2px;
+	}
+
+	a#btn {
+		font-size: 1.5em;
+	}
+
+	p {
+		display: none;
+	}
+}
